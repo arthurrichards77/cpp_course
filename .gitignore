@@ -1,5 +1,6 @@
 *~
 *.o
+*.exe
 hello
 mixing
 root
