@@ -28,12 +28,26 @@ double Rectangle::get_area() {
   return(h*w);
 }
 
+
+
+class Square : public Rectangle {
+  public:
+    void set_side_len(double);
+};
+
+void Square::set_side_len(double s_in) {
+  // can't access h,w directly as they're private
+  set_width_height(s_in,s_in);
+}
+
 int main() {
   Rectangle r;
-  // can't access h and w directly from outside
-  // r.w = 3.0 will fail
   r.set_width_height(3.0,4.0);
   std::cout << r.get_area() << std::endl;
-  r.scale(2.0);
-  std::cout << r.get_area() << std::endl;
+  Square s;
+  s.set_side_len(2.0);
+  std::cout << s.get_area() << std::endl;
+  s.scale(3.0);
+  std::cout << s.get_area() << std::endl;
+
 }

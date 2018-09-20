@@ -8,3 +8,6 @@ g++ -o byvalue byvalue.cpp
 
 g++ -c rootlib.cpp
 g++ -o rootlibtest rootlibtest.cpp rootlib.o
+
+g++ -o rectangle rectangle.cpp
+g++ -o square square.cpp
