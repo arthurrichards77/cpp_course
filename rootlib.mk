@@ -1,4 +1,6 @@
-all: rootlibtest.cpp rootlib.o
+all: rootlibtest
+
+rootlibtest: rootlibtest.cpp rootlib.o
 	g++ -o rootlibtest rootlibtest.cpp rootlib.o
 
 rootlib.o: rootlib.cpp rootlib.hpp

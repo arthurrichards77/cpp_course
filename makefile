@@ -1,7 +1,10 @@
-all: byvalue hello mixing poly rectangle rectlist root rootfun rectanglelibtest rootlibtest square squarelibtest
+all: byvalue hello mixing poly rectangle rectlist root rootfun rectanglelibtest rootlibtest square squarelibtest trig
 
 hello: hello.cpp
 	g++ -o hello hello.cpp
+
+trig: trig.cpp
+	g++ -o trig trig.cpp
 
 mixing: mixing.cpp
 	g++ -o mixing mixing.cpp
