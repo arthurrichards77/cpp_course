@@ -4,6 +4,7 @@
 
 int main() {
 
+
   std::vector<Rectangle> all_rects;
   Rectangle r;
   Square s;
